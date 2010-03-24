@@ -1,0 +1,99 @@
+/* @group reset */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, .btn 
+{ margin: 0; padding: 0; border: 0; font-size: 100%; font-family: inherit; vertical-align: baseline }
+a img, frameset { border: 0; }
+table {	border-collapse: collapse; border-spacing: 0; }
+caption, th, td { text-align: left;	font-weight: normal; }
+blockquote:before, blockquote:after, q:before, q:after { content: ""; }
+blockquote, q {	quotes: "" ""; }
+/* @end */
+
+/* @group utility */
+.hide { display: none; }
+.contain-overflow { overflow: hidden; }
+.screen-reader { display: block; left: -9999px; position: absolute; top: -9999px; }
+.row:after, .clearfix:after {
+    content: "."; 
+    display: block; 
+    height: 0; 
+    clear: both; 
+    visibility: hidden;
+}
+.amp { font-family: Baskerville, "Goudy Old Style", "Palatino", "Book Antiqua", serif; font-size: 1.1em; font-style: italic; font-weight: normal; }
+/* @end */
+
+/* @group =base */
+body {
+  background: #1a1f1e url(../images/structure/bg-body.png);
+  color: #e3dfba;
+	font: 24px/36px Helvetica, Arial, Sans-Serif;
+}
+
+	/* @group -headers */
+	h1, h2, h3, h4, h5, h6 { font-weight: normal; }
+	h1 { font-size: 18px; line-height: 18px; }
+	h2, h3, h4, h5 { font-family: Georgia, "Times New Roman", Times, serif; }
+	h2 { color: #6cbdb5; font-size: 60px; line-height: 60px; }
+	/* @end */
+
+	/* @group -links */
+	a, a:link { text-decoration: underline; }
+	a:visited {}
+	a:hover { text-decoration: none; }
+	a:active {}
+	/* @end */
+	
+	/* @group -basic text */
+	p, ol, ul, table { margin: 0 0 30px; }
+	ul { list-style: square; }
+	li { border-bottom: 1px solid rgba(147,204,198,0.2); padding: 20px 0; }
+	li:first-child { padding-top: 0; }
+	li:last-child { border-bottom: none; padding-bottom: 0; }
+	/* @end */
+
+	/* @group -header/footer */
+	#header, #footer {
+	  background: rgba(147,204,198,0.5);
+	  color: #fff;
+	  font-size: 14px; 
+	  line-height: 14px;
+	  position: fixed;
+	  width: 100%;
+	  z-index: 10;
+	}
+	#header { top: 0; }
+	#footer { bottom: 0; text-align: right; }
+	#header .container, #footer .container { padding: 20px; }
+	/* @end */	
+	
+	/* @group -form elements */
+	button { 
+		cursor: pointer; 
+		width: auto;
+		overflow: visible;
+	}
+	label { font-weight: bold; }
+	/* @end */		
+
+/* @end */
+/* @group =pages */
+
+  /* @group -slides */
+  #slides { top: 40px; }
+  .slide { padding: 100px; }
+  .js .slide { position: absolute; }
+  /* @end */
+
+	/* @group -pagers */
+  .nav-pager, .nav-prev-next { font-size: 14px; line-height: 14px; list-style: none; margin: 0; overflow: hidden; position: fixed; z-index: 100; }
+  .nav-pager li, .nav-prev-next li { border: none; float: left; padding: 0; }
+  .nav-pager a, .nav-prev-next a { display: block; line-height: 12px; }
+  .nav-pager { bottom: 0; left: 20px; }
+  .nav-pager li { margin-right: 10px; }
+  .nav-pager a, .nav-prev-next a { background: #93ccc6; color: rgba(26,31,30,0.5); padding: 10px 5px; text-decoration: none; }
+  .nav-pager .current a, .nav-prev-next a:hover { background: #6cbdb5; color: #fff; }
+  .nav-prev-next { right: 20px; top: 0; }
+  .nav-prev-next li { margin-left: 10px; }
+	/* @end */
+
+/* @end */

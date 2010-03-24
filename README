@@ -1,0 +1,23 @@
+A light-weight presentation plugin to use in place of Keynote or Powerpoint. Use the right and left keys, the previous & next buttons, or the actual page links to navigate through the slides.
+
+Sample Usage:
+
+<div id="slides">
+  <div class="slide">
+    Slide 1
+  </div>
+  <div class="slide">
+    Slide 2
+  </div>
+  <div class="slide">
+    Slide 3
+  </div>
+</div>
+
+$('#slides').presentation({
+  slide: '.slide',
+  pagerClass: 'nav-pager',
+  prevNextClass: 'nav-prev-next',
+  prevText: 'Previous',
+  nextText: 'Next'
+});
