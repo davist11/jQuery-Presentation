@@ -19,5 +19,6 @@ $('#slides').presentation({
   pagerClass: 'nav-pager', //Class to put on the unordered list that contains links to each slide
   prevNextClass: 'nav-prev-next', //Class to put on the unordered list that contains the previous and next links
   prevText: 'Previous', //Text for the Previous link
-  nextText: 'Next' //Text for the Next link
+  nextText: 'Next', //Text for the Next link
+  transition: 'fade' //Possible values are 'fade', 'show/hide', 'slide'
 });
