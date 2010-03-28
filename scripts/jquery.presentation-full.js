@@ -42,11 +42,11 @@
         $presentation.slideToShow = $presentation.slides.filter(':nth-child('+newSlide+')')
       
       	switch ($presentation.options.transition) {
-        	case "show/hide":
+        	case 'show/hide':
 						$presentation.visibleSlide.hide();
 						$presentation.slideToShow.show();
 						break;
-					case "slide":
+					case 'slide':
 						$presentation.visibleSlide.slideUp(500, function () {
 						    $presentation.slideToShow.slideDown(1000)
 						});
